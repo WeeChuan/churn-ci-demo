@@ -39,3 +39,12 @@ jobs:
         with:
           name: metrics
           path: metrics.json
+
+  deploy:
+    name: Deploy Application
+    runs-on: ubuntu-latest
+    needs: retrain
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Promote Model
+        run: echo "Promoting model to production..."
