@@ -1,1 +1,1 @@
-![CI](https://github.com/<your-username>/churn-ci-demo/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/WeeChuan/churn-ci-demo/actions/workflows/ci.yml/badge.svg)
