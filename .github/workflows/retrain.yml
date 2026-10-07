@@ -21,7 +21,7 @@ jobs:
           python src/make_data.py 7
           python src/train_eval.py
       - name: Publish
-        Publish:
+        env:
           TOKEN: ${{ secrets.REGISTRY_TOKEN }}
         run: echo "publishing with token $TOKEN"
       - name: Something breaks
