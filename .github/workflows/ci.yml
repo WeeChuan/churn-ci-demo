@@ -27,4 +27,4 @@ jobs:
       - name: Train and evaluate
         run: python src/train_eval.py
       - name: Quality gate
-        run: python src/check_metrics.py --min-recall 0.45
+        run: python src/check_metrics.py --min-recall 0.60
